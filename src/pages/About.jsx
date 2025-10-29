@@ -72,7 +72,7 @@ const About = () => {
           <div className="relative z-10 bg-opacity-80 p-6 h-full overflow-y-auto">
             <p className="text-base sm:text-lg text-white leading-relaxed rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
               Hi, I’m{" "}
-              <span className="font-bold text-blue-600">BELAL KHAN</span> — a
+              <span className="font-bold text-blue-600">BALAL HOSSEN</span> — a
               passionate <span className="font-semibold">MERN stack developer</span>{" "}
               dedicated to building dynamic, responsive, and scalable web
               applications. <br />

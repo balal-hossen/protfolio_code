@@ -21,7 +21,7 @@ const socialLinks = [
     bgColor: "bg-blue-600 hover:bg-blue-700",
   },
   {
-    href: "https://github.com/BELALKHANBK",
+    href: "https://github.com/balal-hossen",
     label: "GitHub",
     icon: <FaGithub />,
     bgColor: "bg-gray-800 hover:bg-gray-900",

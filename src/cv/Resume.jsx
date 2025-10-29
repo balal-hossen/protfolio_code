@@ -32,10 +32,10 @@ const Resume = () => {
           </div>
 
           {/* User Info */}
-          <div className="ml-40 mt-[-4rem] md:mt-0">
-            <h1 className="text-[60px] leading-[75px] font-extrabold text-gray-800">Belal Khan</h1>
+          <div className=" lg:ml-40 ml-24 lg:mt-30  md:mt-0">
+            <h1 className="lg-mt-60 text-3xl lg:text-4xl  leading-[75px] font-extrabold text-gray-800">BALAL HOSSEN</h1>
             <p className="text-[33px] text-gray-800">WEB DEVELOPER</p>
-            <div className="flex gap-5 mt-6">
+            <div className="flex ml-16 gap-5 mt-6">
               <a href="#" className="w-7 h-7 bg-yellow-400 flex items-center justify-center rounded-full text-white">
                 <i className="fa fa-youtube-play" aria-hidden="true"></i>
               </a>
@@ -63,7 +63,7 @@ const Resume = () => {
                   <p><i className="fa fa-map-marker"></i> Rangpur, Bangladesh</p>
                   <p><i className="fa fa-phone"></i> +8801309707330</p>
                   <p><i className="fa fa-envelope"></i> balalhossen1711@gmail.com</p>
-                  <p><i className="fa fa-chrome"></i> www.belalkhan.com</p>
+                 
                 </div>
                 <div className="bg-gray-800 rounded-full px-5 py-2 shadow-md">
                   <h3 className="text-white text-lg">Skill</h3>

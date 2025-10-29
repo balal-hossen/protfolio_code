@@ -18,11 +18,12 @@ const Contact = () => {
     setErrorMsg('');
 
     try {
-      const res = await fetch('https://contac-server-ap9h.onrender.com/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+     const res = await fetch('http://localhost:5000/send-email', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(formData),
+});
+
 
       if (!res.ok) throw new Error('Failed to send message');
 
