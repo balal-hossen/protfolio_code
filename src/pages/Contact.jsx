@@ -1,37 +1,43 @@
-import { useState } from 'react';
-import video from '../assets/image/13495-248644905_small.mp4'
+import { useState } from "react";
+import video from "../assets/image/13495-248644905_small.mp4";
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [loading, setLoading] = useState(false);
-  const [successMsg, setSuccessMsg] = useState('');
-  const [errorMsg, setErrorMsg] = useState('');
+  const [successMsg, setSuccessMsg] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setSuccessMsg('');
-    setErrorMsg('');
+    setSuccessMsg("");
+    setErrorMsg("");
 
     try {
-     const res = await fetch('https://protfolio-backend-1-cer6.onrender.com/send-email', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(formData),
-});
+      const res = await fetch(
+        "https://protfolio-backend-2-4m4u.onrender.com/send-email",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
-
-      if (!res.ok) throw new Error('Failed to send message');
+      if (!res.ok) throw new Error("Failed to send message");
 
       const data = await res.json();
       setSuccessMsg(data.message);
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      setErrorMsg('Oops! Something went wrong. Please try again.');
+      setErrorMsg("Oops! Something went wrong. Please try again.");
       console.error(err);
     } finally {
       setLoading(false);
@@ -57,15 +63,18 @@ const Contact = () => {
 
       {/* Content */}
       <div className="relative z-20 p-8">
-        <h2 className="text-4xl mb-10 font-bold text-center md:text-left">Contact Me</h2>
+        <h2 className="text-4xl mb-10 font-bold text-center md:text-left">
+          Contact Me
+        </h2>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Left Side - Contact Info */}
           <div className="space-y-6 text-left">
             <h3 className="text-3xl font-semibold mb-4">Let's Connect</h3>
             <p>
-              I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-              Feel free to reach out through any of the following channels:
+              I am always open to discussing new projects, creative ideas, or
+              opportunities to be part of your visions. Feel free to reach out
+              through any of the following channels:
             </p>
 
             <div className="space-y-3 mt-6">
@@ -87,10 +96,9 @@ const Contact = () => {
               </div>
             </div>
 
-            
-
             <p className="mt-8 italic text-gray-300">
-              Quick Response: I typically respond within 6 hours. Looking forward to hearing from you!
+              Quick Response: I typically respond within 6 hours. Looking
+              forward to hearing from you!
             </p>
           </div>
 
@@ -127,10 +135,11 @@ const Contact = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition ${loading ? 'opacity-50 cursor-not-allowed' : ''
-                }`}
+              className={`w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition ${
+                loading ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? "Sending..." : "Send Message"}
             </button>
 
             {successMsg && <p className="mt-4 text-green-400">{successMsg}</p>}
