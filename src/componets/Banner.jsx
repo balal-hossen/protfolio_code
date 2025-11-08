@@ -2,21 +2,21 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import img1 from "../assets/image/fiver.jpg";
 import { Link } from "react-router-dom"; // corrected from "react-router"
-import resumePDF from "../assets/image/BELAL KHAN R.pdf"; // path to your PDF
+import resumePDF from "../assets/image/MD. BALAL HOSSEN.pdf"; // path to your PDF
 
 const Banner = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center relative px-6 md:px-16"
-      style={{
+     /*  style={{
         backgroundImage: `url("/luminous-trails.svg")`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-      }}
+      }} */
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-10"></div>
+      <div className="absolute inset-0 bg-black/0 backdrop-blur-sm z-10"></div>
 
       {/* Content Container */}
       <div className="relative z-20 flex flex-col-reverse md:flex-row items-center max-w-7xl w-full gap-10">
@@ -59,31 +59,30 @@ const Banner = () => {
             and turning ideas into responsive, user-friendly web applications.
           </p>
 
-          <div className="space-x-6 grid grid-cols-3 px-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-2 text-center">
 
-             <Link to="cv">
-              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded text-white text-lg transition">
-                Profile
-              </button>
-            </Link>
-            <Link to="coverletter">
-              <button className=" btn btn-two p-2  py-3 bg-blue-600 hover:bg-blue-700 rounded text-white text-md transition">
-                Cover Letter
-              </button>
-            </Link>
+ 
 
-            {/* Resume PDF Button */}
-            <a
-              href={resumePDF}
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-            >
-              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded text-white text-lg transition">
-                Resume (PDF)
-              </button>
-            </a>
-          </div>
+  <Link to="coverletter">
+    <button className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded text-white text-lg transition">
+      Cover Letter
+    </button>
+  </Link>
+
+ {/* Resume PDF Button */}
+<a
+  href="https://docs.google.com/document/d/18ATKUPzmcYd-CroU9vQcXDrxOLgDvmmh1wHy_FKdR_0/edit?tab=t.0"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded text-white text-lg transition">
+    Resume
+  </button>
+</a>
+
+
+</div>
+
          
         </div>
 

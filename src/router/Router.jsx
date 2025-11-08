@@ -10,6 +10,7 @@ import CoverLetter from "../cv/CoverLetter";
 import AboutPro from "../pages/projectDemo/AboutPro";
 import LostAndFound from "../pages/projectDemo/LostAndFound";
 import ProjectOverview from "../pages/projectDemo/ProjectReview";
+import RidexDetails from "../pages/RidexDetails";
 
 
 export const router = createBrowserRouter([
@@ -44,7 +45,7 @@ export const router = createBrowserRouter([
         path:'coverletter',
         Component:CoverLetter
     },{
-        path:'aboutpro',
+        path:'hubbyhubDetails',
         Component:AboutPro
     },{
         path:'lostAndFoundDetails',
@@ -52,6 +53,11 @@ export const router = createBrowserRouter([
     },{
         path:'medicalcamp',
         Component:ProjectOverview
+    },
+    
+    {
+        path:'ridexDetails',
+        Component:RidexDetails
     }
 
    ]

@@ -5,15 +5,15 @@ import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const CoverLetter = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center p-6 font-jost">
+    <div className="min-h-screen bg-blue-950  flex item-center justify-center p-6 font-jost">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl p-10 max-w-4xl w-full border border-blue-200 dark:border-gray-700"
+        className="bg- rounded-3xl shadow-xl p-10 max-w-4xl w-full border border-blue-200 dark:border-gray-700"
       >
         {/* Header */}
-        <div className="mb-6 text-center">
+        <div className="mb-6 text-center ">
           <h1 className="text-4xl font-extrabold text-blue-700 dark:text-blue-400 tracking-wide">
             <TypeAnimation
               sequence={[
@@ -72,7 +72,7 @@ const CoverLetter = () => {
           <a href="https://www.linkedin.com/in/md-balal-hossenb11" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 text-2xl transition-all">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/BELALKHANBK" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 text-2xl transition-all">
+          <a href="https://github.com/balal-hossen" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 text-2xl transition-all">
             <FaGithub />
           </a>
         </div>

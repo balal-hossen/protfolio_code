@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="absolute " />
 
       {/* Footer Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-6 md:flex md:justify-between md:items-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-20 md:flex md:justify-between md:items-center">
         {/* Left */}
         <div className="mb-6 md:mb-0 text-center md:text-left">
           <h2 className="text-2xl font-bold text-white mb-2">Balal Hossen</h2>
@@ -40,7 +40,7 @@ const Footer = () => {
         {/* Right - Social Icons */}
         <div className="flex justify-center space-x-6 text-gray-400">
           <a
-            href="https://github.com/BELALKHANBK"
+            href="https://github.com/balal-hossen"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -52,7 +52,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/md-balal-hossenb11"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -66,7 +66,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="https://twitter.com/yourtwitter"
+            href="https://x.com/balalhossen1711"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"

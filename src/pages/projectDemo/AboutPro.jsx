@@ -10,7 +10,7 @@ const AboutPro = () => {
   const aboutAnimUrl = "https://assets2.lottiefiles.com/packages/lf20_x62chJ.json"; // Replace with your favorite animation URL
 
   return (
-    <div className="bg-base-200 min-h-screen px-4 py-12">
+    <div className="bg-blue-950 min-h-screen px-4 py-12">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h1 className="text-4xl font-bold text-center mb-12">
@@ -34,7 +34,7 @@ const AboutPro = () => {
             />
           </Zoom>
           <Fade direction="up">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               <strong>HobbyHub</strong> is a modern web platform where people
               can discover, join, and create local hobby-based groups — from
               hiking adventures to book clubs, painting circles, gaming squads,
@@ -46,9 +46,9 @@ const AboutPro = () => {
 
         {/* Technologies Used */}
         <Fade direction="left" triggerOnce>
-          <div className="bg-white shadow-lg rounded-xl p-6 mb-8">
+          <div className="bg-blue-970 shadow-lg rounded-xl p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-4">🛠 Technologies Used</h2>
-            <div className="grid sm:grid-cols-2 gap-4 text-gray-700">
+            <div className="grid sm:grid-cols-2 gap-4 text-gray-100">
               <ul className="list-disc pl-6 space-y-2">
                 <li>React (Vite) – SPA Frontend</li>
                 <li>Tailwind CSS + DaisyUI – Styling</li>
@@ -67,9 +67,9 @@ const AboutPro = () => {
 
         {/* Features */}
         <Fade direction="right" triggerOnce>
-          <div className="bg-white shadow-lg rounded-xl p-6 mb-8">
+          <div className="bg-blue-950 shadow-lg rounded-xl p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-4">✨ Features</h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <ul className="list-disc pl-6 space-y-2 text-gray-100">
               <li>Responsive design for mobile, tablet, and desktop</li>
               <li>Secure authentication with private/protected routes</li>
               <li>Ability to create and manage hobby groups</li>
@@ -83,9 +83,9 @@ const AboutPro = () => {
 
         {/* User Benefits */}
         <Fade direction="up" triggerOnce>
-          <div className="bg-white shadow-lg rounded-xl p-6 mb-8">
+          <div className="bg-blue-950 shadow-lg rounded-xl p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-4">💡 User Benefits</h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <ul className="list-disc pl-6 space-y-2 text-gray-100">
               <li>Connect with people who share the same passions</li>
               <li>Discover new hobbies and activities in your area</li>
               <li>Organize events and invite members easily</li>
@@ -98,9 +98,9 @@ const AboutPro = () => {
 
         {/* Future Plans */}
         <Fade direction="up" triggerOnce>
-          <div className="bg-white shadow-lg rounded-xl p-6">
+          <div className="bg-blue-950 shadow-lg rounded-xl p-6">
             <h2 className="text-2xl font-semibold mb-4">🚀 Future Plans</h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <ul className="list-disc pl-6 space-y-2 text-gray-100">
               <li>Add real-time chat for group members</li>
               <li>Event reminder notifications</li>
               <li>Location-based hobby suggestions</li>
